@@ -1,12 +1,15 @@
 const CACHE_NAME = 'verbs-cache-v1';
+// Reemplaza 'english-verbs-pwa' con el nombre de tu repositorio
+const REPO_NAME = '/irregular-english-verbs';
+
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icons/icon-192x192.png',
-  '/icons/icon-256x256.png',
-  '/icons/icon-384x384.png',
-  '/icons/icon-512x512.png'
+  REPO_NAME + '/',
+  REPO_NAME + '/index.html',
+  REPO_NAME + '/manifest.json',
+  REPO_NAME + '/icons/icon-192x192.png',
+  REPO_NAME + '/icons/icon-256x256.png',
+  REPO_NAME + '/icons/icon-384x384.png',
+  REPO_NAME + '/icons/icon-512x512.png'
 ];
 
 self.addEventListener('install', (event) => {
